@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <!-- multistep form -->
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+            <li class="active">Welcome</li>
+            <li>Enter Demographic Info</li>
+            <li>Submit Image</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Welcome</h2>
+                <h3 class="fs-subtitle">Description about the project here</h3>
+
+                 <p>Insert more description and content here</p>
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Enter Demographic Info</h2>
+                <h3 class="fs-subtitle"></h3>
+                <input type="text" name="age" placeholder="Age" />
+                <input type="text" name="sex" placeholder="Sex" />
+                <dl class="dropdown"> 
+  
+                    <dt>
+                    <a href="#">
+                      <span class="hida">Race</span>    
+                      <p class="multiSel"></p>  
+                    </a>
+                    </dt>
+                  
+                    <dd>
+                        <div class="mutliSelect">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" value="White" />White</li>
+                                <li>
+                                    <input type="checkbox" value="Asian" />Asian</li>
+                                <li>
+                                    <input type="checkbox" value="Black or African American" />Black</li>
+                                <li>
+                                    <input type="checkbox" value="American Indian or Alaska Native" />American Indian or Alaska Native</li>
+                                <li>
+                                    <input type="checkbox" value="Hispanic or Latino" />Hispanic or Latino</li>
+                                <li>
+                                    <input type="checkbox" value="Other" />Other</li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Upload Image</h2>
+                <h3 class="fs-subtitle">Upload an image of your face</h3>
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            </fieldset>
+        </form>
+    </body>
+    <script type="module" src="script.js"></script>
+</html>
